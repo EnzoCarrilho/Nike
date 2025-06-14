@@ -10,7 +10,7 @@
     <title>Nike</title>
 </head>
 <body class="h-[100vh] w-[100vw] relative">
-    <div class="h-[100%] w-[25%] bg-[#4AE5D3] absolute top-[0] right-[0] z-[-1] bg-[#4AE5D3]"></div>
+    <div class="h-[100%] w-[25%] bg-[#4AE5D3] absolute top-[0] right-[0] z-[-1] bg-[#4AE5D3] max-sm:hidden"></div>
     <header class="flex justify-between pt-[70px]">
         <img src="./img/Nike-logo.png " alt="logo Nike" class="pl-[70px]">
         <nav class="text-4xl flex">
@@ -21,7 +21,7 @@
         </nav>
         <img src="./img/Burger.svg" alt="" class="pr-[70px]">
     </header>
-   <main class="flex grow pt-[100px] pl-[70px]">
+   <main class="flex grow pt-[100px] pl-[70px] max-md:grid ">
         <nav class="grid justify-between gap-[55px]">
             <div class="h-[15px] w-[15px] rounded-full bg-black"></div>
             <div class="h-[15px] w-[15px] rounded-full outline outline-black"></div>
@@ -29,22 +29,22 @@
             <div class="h-[15px] w-[15px] rounded-full outline outline-black"></div>
             <div class="h-[15px] w-[15px] rounded-full outline outline-black"></div>
         </nav>
-        <button class="flex absolute top-120 left-50 bg-black text-white w-[191px] h-[43px] justify-center items-center">
+        <button class="flex absolute top-120 left-0 bg-black text-white w-[191px] h-[43px] justify-center items-center max-md:relative top-0 max-md:top-50 left-60 ">
             <span class="font-[Oswald] text-[20px]">PRE-ORDER</span>
             <img src="./img/button-image.svg" alt="">
         </button>
-        <div class="flex items-start justify-between h-[120px] pl-[100px] gap-[150px]">
+        <div class="flex absolute left-40 items-start justify-between gap-[200px] max-md:flex-col gap-[270px]">
             <div class="flex items-center justify-between">
                 <div class="w-[190px] h-[3px] bg-black"></div>
-                <span class="grid font-[Oswald] font-bold text-[41px]">OUT</span>
+                <span class="grid font-[Oswald] font-bold text-[2.5rem] max-md: text-lg max-md:text-[2.2rem]">OUT</span>
+                <h2 class=" absolute font-[Oswald] font-bold text-[2.5rem] pt-[24px] max-md:text-[2.2rem]"><br>OF COMPETITION</h2>
             </div>
-            <h2 class="flex absolute font-[Oswald] font-bold text-[41px] pl-[0]"><br>OF COMPETITION</h2>
-            <p class="font-[Oswald] text-[21px]">Stand out with the new Air Zoom <br> G.T. Run, featuring a new <br> cushioning in the heel.</p>
+            <p class="font-[Oswald] text-[21px] max-md:text-[1.5rem]">Stand out with the new Air Zoom <br> G.T. Run, featuring a new <br> cushioning in the heel.</p>
         </div>
-        <img src="./img/tênis-img.png" alt="" class="absolute right-[0] w-[55vw] ">
+        <img src="./img/tênis-img.png" alt="" class="absolute right-[0] w-[55vw] max-md:w-[70vw]">
     </main>
-    <footer>
-        
+   <footer class="flex h-[100px] pt-[140px] max-md:justify-center pt-[260px]">
+        <p class="font-[Oswald] text-[16px] flex justify-left pl-[70px] ">Copyright 2018 nike. All rights reserved.</p>
     </footer>
 </body>
 </html>
